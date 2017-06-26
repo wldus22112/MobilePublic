@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:textStyle="bold"
+    android:textSize="20dp"
+    android:textColor="#377a9d"
+    android:layout_marginTop="25dp"
+    android:id="@+id/info_title"
+    android:text="│ 내 주변 배출업소 조회 │"
+    />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/info_text01"
+        android:text="현재 사용자의 위치정보를 중심으로 주변에 위치한"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/info_text02"
+        android:text="배출업소를 지도상에서 조회할 수 있습니다."/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:id="@+id/info_left"
+                android:onClick="onClick"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back"/>
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_weight="6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                />
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:id="@+id/info_right"
+                android:onClick="onClick"
+                android:layout_height="wrap_content"
+                android:background="@drawable/arrow1"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

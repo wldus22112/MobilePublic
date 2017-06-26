@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.admin.mobilepublic_20160811.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#00b0d4"
+        android:weightSum="10"
+        android:id="@+id/main_search"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:id="@+id/input_text"
+            android:hint=" 주소, 사업자명"
+            android:layout_weight="2"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#ffffff"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="검색"
+            android:id="@+id/main_search_btn"
+            android:onClick="onClick"
+            android:layout_weight="8"
+            android:textColor="#ffffff"
+            android:background="#00b0d4"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#00b0d4"
+        android:weightSum="3"
+        android:id="@+id/main2"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/border_button"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:onClick="onClick"
+            android:weightSum="10"
+            android:padding="7dp"
+
+            android:id="@+id/report_water"
+
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/water"
+                android:layout_weight="7"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="수질분야"
+                android:gravity="center"
+                android:textSize="13dp"
+                android:layout_weight="3"
+
+               />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#00668a"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="5dp"
+
+            android:onClick="onClick"
+            android:padding="7dp"
+
+            android:weightSum="10"
+            android:id="@+id/report_air"
+
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/air"
+                android:layout_weight="7"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="대기분야"
+
+                android:gravity="center"
+                android:textSize="13dp"
+                android:layout_weight="3"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:background="#00668a"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="5dp"
+
+            android:onClick="onClick"
+            android:padding="7dp"
+
+            android:weightSum="10"
+            android:id="@+id/report_etc"
+
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/etc"
+                android:layout_weight="7"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:textSize="13dp"
+                android:layout_weight="3"
+                android:text="기타"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+
+            android:id="@+id/report_text"
+            android:background="#00668a"
+            android:orientation="horizontal">
+
+
+            <ImageView
+
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="88dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/click"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="신고할 위치를 꾹 눌러주세요"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:textSize="13dp"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

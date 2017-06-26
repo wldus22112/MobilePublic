@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+    android:layout_gravity="right"
+     android:gravity="right"
+     android:orientation="horizontal">
+
+     <ImageView
+         android:onClick="onClick"
+         android:id="@+id/arcgis_info_close"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:padding="10dp"
+         android:layout_marginRight="10dp"
+         android:layout_marginTop="5dp"
+         android:background="@drawable/close"/>
+ </LinearLayout>
+
+        <TextView
+            android:id="@+id/arcgis_info_title01"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="│ 국토환경성평가지도란? │"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#377a9d"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/arcgis_info_value01"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:text="국토의 다양한 환경정보(65개 항목)를 종합적으로 평가하여 환경적 가치에 따라 전국을 5개 등급으로 구분하고 색채를 다르게 표시하여 누구나 알기 쉽게 작성한 지도이다."
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/arcgis_info_title02"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#377a9d"
+            android:text="│ 국토환경성평가지도란? │"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/arcgis_info_value02"
+            android:layout_margin="20dp"
+            android:text="국토환경성평가항목은 법령의 규정에 의한 보전용도지역 등의 법제적 평가 항목과 자연자산의 개념을 포함하는 환경·생태적 평가 항목으로 구분함 법제적 평가 항목은 자연환경, 수질환경, 기타 등 3개 부문 57개 항목으로 구성되어 있음.
+환경·생태적 평가 항목은 자연자원의 개념을 반영하여 다양성(종 다양성 등), 자연성(영급, 생태자연도 등), 희귀성(보호종 및 멸종위기종 분포도 등), 허약성(도로인접성, 시가지인접성 등), 안정성(경급 등), 연계성, 잠재적 가치 등 8개 항목으로 구성되어 있음.
+평가등급은 환경적 가치에 따라 1~5등급으로 구분되는데, 1~4등급은 상대적인 측면에서의 환경적 보전가치 정도를 평가한 것이고, 5등급은 기 개발지역에 해당함. 1등급에 가까울수록 상대적으로 환경적 가치가 높음.
+"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/arcgis_info_EGIS"
+            android:layout_margin="20dp"
+            android:text="EGIS에서 자세히 보기"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_gravity="bottom"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:background="#004d79"
+            android:onClick="onClick"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

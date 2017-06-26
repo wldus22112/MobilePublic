@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="모바일 환경정보 알리미 앱이란?"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:textSize="20dp"
+        android:textColor="#377a9d"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:text="모바일 환경정보 알리미 앱은 배출업소 및 측정소의"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="위치와 상세정보를 보다 간편하게 조회하고,"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="국토환경성평가지도, 생태자연도, 토지피복지도와 같은"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="각종 환경지도에 있는 다양한 유형의 위치정보를"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="하나의 지도에서 조회 및 비교할 수 있습니다."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="또한 단순한 정보조회 뿐만 아니라 환경배출시설에 대한"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="직접 신고도 본 앱을 통해 이루어 질 수 있게 하여"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="국민들의 적극적인 환경감시를 기대할 수 있습니다."
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d7d7d7"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/appinfo_01"
+            android:layout_height="0dp"
+            android:onClick="onClick"
+            android:layout_weight="1.2"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_margin="1dp">
+
+                <TextView
+                    android:text="배출업소 조회 이용안내"
+                    android:textStyle="bold"
+                    android:textSize="50px"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="9"
+                    android:layout_height="match_parent"
+                    android:textColor="#96000000"
+                    />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text=">"
+                    android:textColor="#448ccb"
+                    android:textSize="70px"
+                    />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d7d7d7"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/appinfo_02"
+            android:layout_height="0dp"
+            android:onClick="onClick"
+            android:layout_weight="1.2"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_margin="1dp">
+
+            <TextView
+                android:text="측정소 조회 이용안내"
+                android:textStyle="bold"
+                android:textSize="50px"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="9"
+                android:layout_height="match_parent"
+                android:textColor="#96000000"
+                />
+
+            <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text=">"
+            android:textColor="#448ccb"
+            android:textSize="70px"
+            />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d7d7d7"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/appinfo_03"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:onClick="onClick"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_margin="1dp">
+
+            <TextView
+                android:text="환경지도 이용안내"
+                android:textStyle="bold"
+                android:textSize="50px"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="9"
+                android:layout_height="match_parent"
+                android:textColor="#96000000"
+                />
+
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text=">"
+                android:textColor="#448ccb"
+                android:textSize="70px"
+                />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d7d7d7"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/appinfo_04"
+            android:layout_height="0dp"
+            android:onClick="onClick"
+            android:layout_weight="1.2"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_margin="1dp">
+
+            <TextView
+                android:text="신고하기 이용안내"
+                android:textStyle="bold"
+                android:textSize="50px"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="9"
+                android:layout_height="match_parent"
+                android:textColor="#96000000"
+                />
+
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text=">"
+                android:textColor="#448ccb"
+                android:textSize="70px"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d7d7d7"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

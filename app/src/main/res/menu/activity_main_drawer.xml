@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/main_button"
+            android:icon="@drawable/main_color"
+            android:title="배출업소 조회" />
+        <item
+            android:id="@+id/checkspot_button"
+            android:icon="@drawable/checkspot_color"
+            android:title="측정소 조회" />
+        <item
+            android:id="@+id/statistical_button"
+            android:icon="@drawable/leaves_color"
+            android:title="환경지도" />
+        <item
+            android:id="@+id/return_button"
+            android:icon="@drawable/report_color"
+            android:title="신고하기" />
+
+
+        <item
+            android:id="@+id/info_button"
+            android:icon="@drawable/info_color"
+            android:title="이용안내" />
+
+
+    </group>
+
+
+
+</menu>

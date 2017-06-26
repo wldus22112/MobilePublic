@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:weightSum="2"
+    >
+
+
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:id="@+id/checkspot_air"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check_air01"
+            android:drawableLeft="@drawable/wtr01"
+            android:text="아황산가스"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check_air02"
+            android:drawableLeft="@drawable/wtr02"
+            android:text="이산화질소"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check_air03"
+            android:drawableLeft="@drawable/wtr03"
+            android:text="오존"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/wtr04"
+            android:id="@+id/check_air04"
+            android:text="일산화탄소"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/wtr05"
+            android:id="@+id/check_air05"
+            android:text="먼지10"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:id="@+id/check_air06"
+            android:drawableLeft="@drawable/wtr06"
+            android:layout_height="wrap_content"
+            android:text="먼지2"/>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+
+        <LinearLayout
+            android:id="@+id/checkspot_wtr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/check_wtr01"
+                android:drawableLeft="@drawable/wtr01"
+                android:text="용존총인(mg/L)"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/check_wtr02"
+                android:drawableLeft="@drawable/wtr02"
+                android:text="용존산소(mg/L)"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/check_wtr03"
+                android:drawableLeft="@drawable/wtr03"
+                android:text="용존총질소(mg/L)"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/wtr04"
+                android:id="@+id/check_wtr04"
+                android:text="트리클로로에틸렌(mg/L)"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/wtr05"
+                android:id="@+id/check_wtr05"
+                android:text="총인(mg/L)"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/check_wtr06"
+                android:drawableLeft="@drawable/wtr06"
+                android:layout_height="wrap_content"
+                android:text="총질소(mg/L)"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/check_wtr07"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/wtr07"
+                android:text="TOC(mg/L)"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/check_wtr08"
+                android:drawableLeft="@drawable/wtr08"
+                android:layout_height="wrap_content"
+                android:text="테트라클로로에틸렌(mg/L)"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/check_wtr09"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/wtr09"
+                android:text="부유물질(mg/L)"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/check_wtr10"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/wtr10"
+                android:text="음이온계면활성제(mg/L)"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/check_wtr11"
+                android:drawableLeft="@drawable/wtr11"
+                android:layout_height="wrap_content"
+                android:text="인산염인(mg/L)"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/check_wtr12"
+                android:drawableLeft="@drawable/wtr12"
+                android:layout_height="wrap_content"
+                android:text="페놀"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/check_wtr13"
+                android:drawableLeft="@drawable/wtr13"
+                android:layout_height="wrap_content"
+                android:text="PCB(mg/L)"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/check_wtr14"
+                android:drawableLeft="@drawable/wtr14"
+                android:layout_height="wrap_content"
+                android:text="납(mg/L)"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/check_wtr15"
+                android:drawableLeft="@drawable/wtr15"
+                android:layout_height="wrap_content"
+                android:text="유기인(mg/L)"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/check_wtr16"
+                android:drawableLeft="@drawable/wtr16"
+                android:layout_height="wrap_content"
+                android:text="질산성질소(mg/L)"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/check_wtr17"
+                android:drawableLeft="@drawable/wtr17"
+                android:layout_height="wrap_content"
+                android:text="암모니아성질소(mg/L)"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/check_wtr18"
+                android:drawableLeft="@drawable/wtr18"
+                android:layout_height="wrap_content"
+                android:text="수은(mg/L)"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:drawableLeft="@drawable/wtr19"
+                android:id="@+id/check_wtr19"
+                android:layout_height="wrap_content"
+                android:text="헥사클로로벤젠(mg/L)"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/check_wtr20"
+                android:drawableLeft="@drawable/wtr20"
+                android:layout_height="wrap_content"
+                android:text="포름알데히드(mg/L)"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/check_wtr21"
+                android:drawableLeft="@drawable/wtr21"
+                android:layout_height="wrap_content"
+                android:text="디클로로에탄(mg/L)"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/check_wtr22"
+                android:drawableLeft="@drawable/wtr22"
+                android:layout_height="wrap_content"
+                android:text="다이옥세인(mg/L)"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/check_wtr23"
+                android:drawableLeft="@drawable/wtr23"
+                android:layout_height="wrap_content"
+                android:text="디클로로메탄(mg/L)"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/check_wtr24"
+                android:drawableLeft="@drawable/wtr24"
+                android:layout_height="wrap_content"
+                android:text="디에틸헥실프탈레이트(mg/L)"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/check_wtr25"
+                android:drawableLeft="@drawable/wtr25"
+                android:layout_height="wrap_content"
+                android:text="시안(mg/L)"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/check_wtr26"
+                android:drawableLeft="@drawable/wtr26"
+                android:layout_height="wrap_content"
+                android:text="COD(mg/L)"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/check_wtr27"
+                android:drawableLeft="@drawable/wtr27"
+                android:layout_height="wrap_content"
+                android:text="6가크롬(mg/L)"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/check_wtr28"
+                android:drawableLeft="@drawable/wtr28"
+                android:layout_height="wrap_content"
+                android:text="클로로필(mg/L)"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:drawableLeft="@drawable/wtr29"
+                android:id="@+id/check_wtr29"
+                android:layout_height="wrap_content"
+                android:text="카드뮴(mg/L)"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/check_wtr30"
+                android:drawableLeft="@drawable/wtr30"
+                android:layout_height="wrap_content"
+                android:text="사염화탄소"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/check_wtr31"
+                android:drawableLeft="@drawable/wtr31"
+                android:layout_height="wrap_content"
+                android:text="BOD(mg/L)"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/check_wtr32"
+                android:drawableLeft="@drawable/wtr32"
+                android:layout_height="wrap_content"
+                android:text="벤젠(mg/L)"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:drawableLeft="@drawable/wtr33"
+                android:id="@+id/check_wtr33"
+                android:layout_height="wrap_content"
+                android:text="비소(mg/L)"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/check_wtr34"
+                android:drawableLeft="@drawable/wtr34"
+                android:layout_height="wrap_content"
+                android:text="안티몬(mg/L)"/>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

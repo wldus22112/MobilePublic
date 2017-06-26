@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="#ffffff">
+
+
+
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/company_search_list_view"
+    android:divider="#3f51b5"
+    android:choiceMode="singleChoice"
+    android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/search_layout"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/companysearch_result"
+            android:gravity="center"
+            android:text="검색 결과가\n존재하지 않습니다."
+
+            android:layout_marginBottom="370dp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onclick"
+        android:padding="20dp"
+        android:textStyle="bold"
+
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:id="@+id/companysearch_btn"
+        android:text="닫기"
+        android:background="#00668a"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
+

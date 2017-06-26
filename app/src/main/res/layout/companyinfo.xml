@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#00b0d4"
+        android:weightSum="3"
+        android:id="@+id/report_type"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#00668a"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="5dp"
+
+            android:weightSum="10"
+            android:padding="7dp"
+
+            android:id="@+id/info_type_water"
+
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/water"
+                android:layout_weight="7"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="수질분야"
+                android:gravity="center"
+                android:textSize="13dp"
+                android:layout_weight="3"
+
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#00668a"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="5dp"
+
+
+            android:padding="7dp"
+
+            android:weightSum="10"
+            android:id="@+id/info_type_air"
+
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/air"
+                android:layout_weight="7"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="대기분야"
+
+                android:gravity="center"
+                android:textSize="13dp"
+                android:layout_weight="3"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:background="#00668a"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:padding="7dp"
+            android:weightSum="10"
+            android:id="@+id/info_type_etc"
+
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/etc"
+                android:layout_weight="7"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:textSize="13dp"
+                android:layout_weight="3"
+                android:text="기타"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:id="@+id/companyinfo_01"
+                android:background="@drawable/border_report_form">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:text="주소"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:background="#fafafb"
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:id="@+id/companyinfo_02"
+                    android:layout_weight="1"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:id="@+id/companyinfo_03"
+                android:background="@drawable/border_report_form">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:text="업종"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:background="#fafafb"
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:id="@+id/companyinfo_04"
+                    android:layout_weight="1"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:id="@+id/companyinfo_05"
+                android:weightSum="4"
+                android:background="@drawable/border_report_form">
+
+                <TextView
+
+                    android:textStyle="bold"
+                    android:text="종별"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:background="#fafafb"
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/companyinfo_06"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+
+                    android:layout_weight="1"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/companyinfo_07"
+                android:weightSum="4"
+                android:background="@drawable/border_report_form">
+
+                <TextView
+                    android:id="@+id/text_report7"
+                    android:textStyle="bold"
+                    android:text="원료 및\n사용량"
+                   android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:background="#fafafb"
+                    android:layout_weight="3"
+                    android:padding="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/companyinfo_08"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:gravity="center_vertical"
+                    />
+
+
+            </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:id="@+id/companyinfo_09"
+        android:background="@drawable/border_report_form">
+
+        <TextView
+
+            android:textStyle="bold"
+            android:text="오염물질"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:background="#fafafb"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/companyinfo_10"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:id="@+id/companyinfo_11"
+        android:background="@drawable/border_report_form">
+
+        <TextView
+
+            android:textStyle="bold"
+            android:text="점검이력"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:background="#fafafb"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/companyinfo_12"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:id="@+id/companyinfo_13"
+        android:background="@drawable/border_report_form">
+
+        <TextView
+
+            android:textStyle="bold"
+            android:text="행정처분이력"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:background="#fafafb"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/companyinfo_14"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            />
+
+
+    </LinearLayout>
+
+
+    <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d7d7d7"
+                />
+
+
+
+
+</LinearLayout>
